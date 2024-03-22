@@ -1,14 +1,11 @@
 package edu.neu.csye7374;
 
-
 /**
  * Life model
  * 
  * 100 TOTAL POINTS
  * 
- * NOTE: 40 point DEDUCTION IF LATE OR INCORRECTLY SUBMITTED OR EXECUTED
- * 
- * @author dgpeters
+ * @author  PramithiJagdish
  * 
  * model the life of persons which age older as they reach milestones in their lives
  * 
