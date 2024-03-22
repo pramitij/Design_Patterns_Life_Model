@@ -1,38 +1,59 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/WmMpfvBY)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10956308&assignment_repo_type=AssignmentRepo)
-# Welcome to the course CSYE6200 - Object Oriented Design
-> Northeastern University, College of Engineering
+# Life Model
+>The Life Model simulates the life of individuals by modeling their attributes using various design patterns including Builder, Command, Decorator, Factory, and Singleton.
+
+## Table of Contents
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Design Patterns Used](#design-patterns-used)
+- [Demo](#demo)
 
 
-## Professor: Daniel Peters
+## Requirements
+  Eclipse or VS Code or IntelliJ.
 
-### Requirements
-1. Eclipse or VS Code or IntelliJ.
+## Installation
+1. Clone the repository on your local system:
+   ```sh
+   git clone https://github.com/yourusername/life-model.git
+   
+Alternatively, for Eclipse Import the project as Existing Maven Project, For IntelliJ you can directlty open it using 'Get from VCS'.
 
-Note: If you are using Eclipse, please have git CLI installed on your system or GitHub Desktop to commit the code in this repository
+2. Navigate to the project directory:
+   ```sh
+   cd life-model
 
-### SetUp Instructions
-1. Please clone the repository on your local system
-2. For Eclipse Import the project as Existing Maven Project, For IntelliJ you can directlty open it using 'Get from VCS'.
-4. All code should be pushed to the main branch
-3. Ensure the GitHub actions are successful post push
+3. Compile and run the demo code:
+   ```sh
+    javac Life.java
+    java Life
+   
+##Usage
 
-Submissions will have deadlines, failed GitHub Actions would result in point deductions.
+Create instances of Person objects and apply decorators to simulate different life milestones.
+Customize the Person attributes as needed using the provided methods.
 
-### References
-1. Cloning a Repository: <https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository>
-2. Any GitHub Setup: Please refer to the Git & GitHub Fundamentals Repository shared to you by your respective TA and refer the README.md section
+##Design Patterns Used
 
-Please reach out to your respective TA if you need any help in regards with submission/ GitHub
+Builder
+Command
+Decorator
+Factory
+Singleton
 
-Author:
-- Aditya Mulik (mulik.a@northeastern.edu)
-- Sai Akhil Vemula (vemula.v@northeastern.edu)
+###Person Class and Builder Design Pattern:
+-The Person class represents a person with attributes like ID, age, name, description, and date of birth.
+-It uses the Builder design pattern (PersonBuilder) to construct Person objects with optional parameters.
+###Factory Design Pattern:
+-The PersonFactoryAPI interface and PersonFactory class demonstrate the Factory design pattern for creating Person objects.
+###Singleton Design Pattern:
+-The PersonFactorySingleton class implements the Singleton pattern using an enum to ensure only one instance of the factory is created.
+###Decorator Design Pattern:
+-Several concrete decorator classes (ResponsiblePersonDecorator, WisePersonDecorator, StudentPersonDecorator, EngineerPersonDecorator, SeniorPersonDecorator) add specific behaviors (like adding descriptions and modifying ages) to Person objects.
+###Command Design Pattern:
+The PersonCommand interface and CreatePersonCommand class use the Command pattern to create and decorate Person objects.
 
-### Specifications of assignment
-
-This assignment was locked Apr 28 at 11:59pm.
-Each student (each team member) must upload their team project (same code and material for each team member) to receive a grade.
-
+##Demo
+Execute the demo method in the Life class to see a demonstration of the program functionality.
 
 
