@@ -34,22 +34,22 @@ Alternatively, for Eclipse Import the project as Existing Maven Project, For Int
    
 ## Usage
 
-Create instances of Person objects and apply decorators to simulate different life milestones.
-Customize the Person attributes as needed using the provided methods.
+Create instances of `Person` objects and apply decorators to simulate different life milestones.
+Customize the `Person` attributes as needed using the provided methods.
 
 ## Design Patterns Used
 
 ### Person Class and Builder Design Pattern:
--The Person class represents a person with attributes like ID, age, name, description, and date of birth.
--It uses the Builder design pattern (PersonBuilder) to construct Person objects with optional parameters.
+>The `Person` class represents a person with attributes like ID, age, name, description, and date of birth.
+>It uses the Builder design pattern `PersonBuilder` to construct `Person` objects with optional parameters.
 ### Factory Design Pattern:
--The PersonFactoryAPI interface and PersonFactory class demonstrate the Factory design pattern for creating Person objects.
+>The `PersonFactoryAPI` interface and `PersonFactory` class demonstrate the Factory design pattern for creating `Person` objects.
 ### Singleton Design Pattern:
--The PersonFactorySingleton class implements the Singleton pattern using an enum to ensure only one instance of the factory is created.
+>The `PersonFactorySingleton` class implements the Singleton pattern using an enum to ensure only one instance of the factory is created.
 ### Decorator Design Pattern:
--Several concrete decorator classes (ResponsiblePersonDecorator, WisePersonDecorator, StudentPersonDecorator, EngineerPersonDecorator, SeniorPersonDecorator) add specific behaviors (like adding descriptions and modifying ages) to Person objects.
+>Several concrete decorator classes `ResponsiblePersonDecorator, WisePersonDecorator, StudentPersonDecorator, EngineerPersonDecorator, SeniorPersonDecorator` add specific behaviors (like adding descriptions and modifying ages) to `Person` objects.
 ### Command Design Pattern:
-The PersonCommand interface and CreatePersonCommand class use the Command pattern to create and decorate Person objects.
+>The `PersonCommand` interface and `CreatePersonCommand` class use the Command pattern to create and decorate `Person` objects.
 
 ## Demo
 Execute the `demo` method in the `Life` class to see a demonstration of the program functionality.
